@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Gloria Hallelujah', cursive;
+        color: darkblue;
+    }
+    a{
+        color: darkred;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+<body>
+<center>
+    <img src="/locals/icons/cmgfs.jpg" style="height: 300px;width: 300px;"><br>
+    Hello <%= name %><br>
+    Here's monthly Reports for you<br><br>
+    <div style="overflow-x:auto;">
+    <table>
+        <tr>
+            <th style="text-align: center;">Report Name</th>
+            <th style="text-align: center;">Download Links</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">Data 1</td>
+            <td style="text-align: center;"><a href="/data1">download</a></td>
+        </tr>
+    </table>
+    </div>
+
+    <br>
+    Regards<br>
+    <span style="color: darkorange">Institute Mob-ops</span>
+</center>
+</body>
+</html>

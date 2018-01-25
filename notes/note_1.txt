@@ -1,0 +1,12 @@
+CREATE TABLE email_to_send_reports_db (
+    ID int NOT NULL AUTO_INCREMENT,
+    email_id varchar(255) NOT NULL,
+    name varchar(255),
+    PRIMARY KEY (ID)
+);
+CREATE TABLE report_schema (
+    ID int NOT NULL AUTO_INCREMENT,
+    tablename varchar(255) NOT NULL,
+    schemaObject varchar(2000),
+    PRIMARY KEY (ID)
+);

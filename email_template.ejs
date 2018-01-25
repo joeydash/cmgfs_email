@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+<div style="color: darkblue;@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');font-family: 'Berkshire Swash', cursive;">
+<center>
+    <img src="https://i.imgur.com/zH57zJF.jpg" style="height: 300px;width: 300px;"><br>
+    Hello <%= name %><br>
+    Here's monthly CMGFS Reports for you<br><br>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th style="text-align: center;">Report Name</th>
+                <th style="text-align: center;">Download Links</th>
+            </tr>
+            <% for(var i=0; i < tables.length; i++) { %>
+            <tr>
+                <td style="text-align: center;"><%= tables[i]%></td>
+                <td style="text-align: center;"><a href="https://students.iitm.ac.in/studentsapp/cmgfs/monthly_email_sender/data/<%= tables[i]+"-"+date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()+".xls"%>" style="color: darkred;text-decoration: none;">download</a></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+
+    <br>
+    Regards<br>
+    <span style="color: darkorange">Institute Mob-ops</span>
+</center>
+</div>
+</body>
+</html>
